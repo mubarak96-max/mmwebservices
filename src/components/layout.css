@@ -86,7 +86,7 @@ nav {
 
 .background-overlay {
   background: rgba(32, 32, 31, 0.45);
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@ nav {
 }
 
 .intro {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   margin: 0 1rem 1rem 2rem;
 }
@@ -116,7 +116,7 @@ nav {
 
 .info {
   padding: 1rem 2rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   line-height: 1.9rem;
   background: rgb(193, 228, 240);
 }
@@ -127,19 +127,17 @@ nav {
   font-size: 1.3rem;
   margin-left: 1rem;
   font-weight: 800;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .reasons li {
   padding: 0.5rem;
-  font-size: 1.1rem;
-  font-family: cursive;
+  font-size: 1rem;
 }
 
 /* design */
 
 .design-intro {
-  font-size: 2.3rem;
+  font-size: 2rem;
   padding: 0.8rem;
   line-height: 2.7rem;
 }
@@ -147,7 +145,7 @@ nav {
 .design-points {
   background: rgb(130, 229, 229);
   padding: 0.4rem 0.7rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: brown;
   line-height: 1.9rem;
 }
@@ -163,7 +161,7 @@ nav {
 
 /* seo page */
 .seo-intro {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.2rem;
   padding: 0.8rem;
   margin-bottom: 0;
@@ -175,8 +173,8 @@ nav {
   color: rgb(41, 38, 38);
   background-color: lightskyblue;
   padding: 0.6rem;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 /* domain page */
@@ -185,7 +183,7 @@ nav {
   background-color: rgb(255, 249, 241);
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0.7rem;
   line-height: 2.2rem;
 }
@@ -208,8 +206,8 @@ nav {
 
 /* mantainance page */
 .mantainance-intro {
-  font-size: 1.3rem;
-  line-height: 2.2rem;
+  font-size: 1rem;
+  line-height: 2rem;
   padding: 0.8rem;
   padding-bottom: 0;
   color: rgb(255, 255, 167);
@@ -228,9 +226,9 @@ nav {
 /* freelancing */
 .freelance-intro {
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   padding: 0.7rem;
-  line-height: 2.4rem;
+  line-height: 2.1rem;
 }
 
 /* services */
@@ -290,7 +288,7 @@ nav {
 /* portfolio */
 .unavailable {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 0.7rem;
   min-height: 50vh;
 }
@@ -363,7 +361,7 @@ form button {
 
 /* footer */
 footer {
-  min-height: 30vh;
+  min-height: 35vh;
   background: rgb(39, 34, 34);
   border-top: 2px solid white;
   color: white;
