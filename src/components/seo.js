@@ -31,7 +31,7 @@ function SEO({ description, title, keywords }) {
     <Helmet htmlAttributes={{lang:"en"}} title={title}>
       <meta name="description" content={description}/>
       <meta name="keywords" content={keywords}/>
-
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </Helmet>
   )
 }
