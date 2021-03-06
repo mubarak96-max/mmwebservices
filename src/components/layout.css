@@ -10,7 +10,6 @@ body {
 /* navbar */
 nav {
   margin-bottom: 0;
-  font-family: cursive;
 }
 
 .head {
@@ -367,15 +366,14 @@ footer {
   background: rgb(39, 34, 34);
   border-top: 2px solid white;
   color: white;
-  font-family: cursive;
 }
 
 .page-links a {
   display: block;
   color: rgb(222, 231, 170);
   text-decoration: underline;
-  font-size: 1.1rem;
-  padding: 0.2rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
   font-weight: 800;
 }
 
