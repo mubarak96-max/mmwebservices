@@ -364,15 +364,16 @@ form button {
 footer {
   min-height: 35vh;
   background: rgb(39, 34, 34);
-  border-top: 2px solid white;
+  border-top: 3px solid white;
   color: white;
+  margin: 0;
 }
 
 .page-links a {
   display: block;
   color: rgb(222, 231, 170);
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.3rem;
   font-weight: 800;
 }

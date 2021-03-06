@@ -24,7 +24,7 @@ const IndexPage = () => {
   const data = useStaticQuery(query)
   return (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description='Your best choice for modern Websites and web apps in Uganda' keywords={['best web designer in Uganda', 'cheap web designer', 'e-commerce website', 'web development', 'affordable website', 'domain name', 'domain registration', 'seo', 'search engine optimization', 'freelancer in uganda', 'freelancer web designer']}/>
     <BackgroundSection img={data.file.childImageSharp.fluid}  styleClass="background-image">
       <div className="background-overlay">
         <div className="background-content">

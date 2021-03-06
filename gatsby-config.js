@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `MM WEB SERVICES`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Building modern websites and web apps`,
     author: `@MM WEB SERVICES`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

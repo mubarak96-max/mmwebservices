@@ -51,6 +51,7 @@ const Packages = () => {
                             <li>3 months web support</li>
                             <li>Chatbot</li>
                             <li>Upto 15 pages</li>
+                            <li>Logo Design</li>
                             <li>Digital marketing solutions</li>
                             <li>Feedback collection form</li>
                         </ul>
@@ -62,6 +63,7 @@ const Packages = () => {
                         <li>E-Commerce Setup</li>
                         <li>Upto 25 pages</li>
                         <li>Authentication</li>
+                        <li>Offline loading</li>
                         <li>6 months web support</li>
                         <li>Online Payment system</li>
                         <li>Push Messages</li>

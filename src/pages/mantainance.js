@@ -20,7 +20,7 @@ const Mantainance = () => {
     const data = useStaticQuery(query)
     return (
         <Layout>
-          <SEO title="Web Mantainace"/>
+          <SEO title="Web Mantainace" keywords={['web mantainance', 'uganda']}/>
              <BackgroundSection img={data.file.childImageSharp.fluid}  styleClass="background-image">
             <div className="background-overlay">
             <div className="background-content">

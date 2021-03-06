@@ -12,8 +12,8 @@ const Footer = () => {
                 <Link to='/blog'>Blog</Link>
             </div>
             <div className="social-links">
-                <a href="http://facebook.com/MM-Web-Services" target="_blank"><FaFacebookSquare size={28} color="white"></FaFacebookSquare></a>
-                <a href="http://whatsapp.com" target="_blank"><FaWhatsappSquare size={28} color="white"></FaWhatsappSquare></a>
+                <a href="https://www.facebook.com/MM-Web-Services-100151941813144" target="_blank"><FaFacebookSquare size={28} color="white"></FaFacebookSquare></a>
+                <a href="https://api.whatsapp.com/send?phone=256770441205" target="_blank"><FaWhatsappSquare size={28} color="white"></FaWhatsappSquare></a>
             </div>
             <div className="partners">
                 <FaGoogle size={23}/>
