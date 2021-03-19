@@ -25,6 +25,7 @@ const Why = () => {
              <li>We are affordable</li>
              <li>We provide more value than the cost</li>
              <li>Responsive website looking good on all screen sizes</li>
+             <li>We build progressive web apps that work more blike naive apps</li>
              <li>Fast loading websites</li>
              <li>Amazing web features</li>
              <li>Available customer support</li>
