@@ -19,6 +19,7 @@
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-source-graphql": "^3.0.0",
+    "gatsby-source-prismic": "^3.3.4",
     "gatsby-source-wordpress": "^5.0.0",
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^2.12.0",
@@ -30,6 +31,7 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "prettier": "2.2.1"
   },
   "keywords": [
