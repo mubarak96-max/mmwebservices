@@ -22,7 +22,7 @@ const SeoPage = () => {
     <Layout>
       <SEO
         title="SEO"
-        description="SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility for relevant searches. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business."
+        description="SEO, search engine optimization in simple terms means the process of improving your site to increase its visibility for relevant searches. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business."
         keywords={["seo", "search engine optimization", "uganda"]}
       />
 

@@ -21,7 +21,7 @@ const Mantainance = () => {
   return (
     <Layout>
       <SEO
-        title="Web Mantainace"
+        title="Web Maintenance"
         description="Your website is the foundation of your business’s online presence. People visit it to learn about your company, find your contact information, and purchase your products. If your website isn’t workin properly or is out of date, you may lose out on significant opportunities, such as new leads and sales."
         keywords={["website maintenance", "maintenance", "uganda"]}
       />

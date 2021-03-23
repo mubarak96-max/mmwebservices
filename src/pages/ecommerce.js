@@ -22,7 +22,7 @@ const Ecommerce = () => {
     <Layout>
       <SEO
         title="E-Commerce"
-        description="Ecommerce is often used to refer to the sale of physical products online, but it can also describe any kind of commercial transaction that is facilitated through the internet. Ecommerce can take on a variety of forms involving different transactional relationships between businesses and consumers, as well as different objects being exchanged as part of these transactions."
+        description="Ecommerce is often used to refer to the sale of products online, it is any kind of commercial transaction that is facilitated through the internet. Ecommerce can take on a variety of forms involving different transactional relationships between businesses and consumers."
         keywords={["e-commerce", "e-commerce website builder", "uganda"]}
       />
       <div className="option ecommerce">
