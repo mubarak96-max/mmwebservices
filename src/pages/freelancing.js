@@ -1,15 +1,14 @@
-import React from 'react'
-import {useStaticQuery,graphql,Link} from 'gatsby'
-import Layout from '../components/layout'
+import React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundSection from '../components/BackgroundImage'
+import Img from "gatsby-image"
 
-
- const query = graphql`
+const query = graphql`
   {
-    file(relativePath: {eq: "refactoring.jpg"}) {
+    file(relativePath: { eq: "free.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -18,22 +17,28 @@ import BackgroundSection from '../components/BackgroundImage'
 `
 
 const Freelancing = () => {
-    const data = useStaticQuery(query)
-    return (
-        <Layout>
-          <SEO title="Freelancing"/>
-        <BackgroundSection img={data.file.childImageSharp.fluid}  styleClass="background-image">
-            <div className="background-overlay">
-            <div className="background-content">
-          <p className="freelance-intro">
-          We offer different services on a short-term basis regarding any of our fields working on a periodic or project basis.
+  const data = useStaticQuery(query)
+  return (
+    <Layout>
+      <SEO
+        title="Freelancing"
+        description="We offer freelancing services in the fields of our specifity"
+        keywords={["freelancer", "freelancing", "uganda"]}
+      />
+      <div className="option freelance">
+        <h3>freelancing</h3>
+        <Img fluid={data.file.childImageSharp.fluid}></Img>
+        <p>We offer freelancing services in the fields of our specifity</p>
+        <p>
+          We offer different services on a short-term basis working from
+          anywhere on a periodic or project basis.
         </p>
-        <Link to='/contact' className='contact-link'>Contact Us Now</Link>
-        </div>
+        <Link to="/packages" className="get-started">
+          get started
+        </Link>
       </div>
-    </BackgroundSection>
-        </Layout>
-    )
+    </Layout>
+  )
 }
 
 export default Freelancing

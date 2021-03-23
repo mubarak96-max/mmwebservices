@@ -1,0 +1,8 @@
+<p className="intro">
+              Today, we live in a digital world and information changes and
+              moves so fast. Digital presence is overtaking the traditional one
+              as more and more people use the internet. Keeping your brand,
+              business and organization off the web puts you in an unfavorable
+              position concerning your works. We provide you with an affordable
+              cost effective professional quality website that maximizes your
+              potential.

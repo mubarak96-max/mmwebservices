@@ -2,14 +2,14 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundSection from "../components/BackgroundImage"
+import Img from "gatsby-image"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "designing.jpg" }) {
+    file(relativePath: { eq: "webd.jpg" }) {
       childImageSharp {
-        fluid {
-          src
+        fluid(quality: 95) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -20,21 +20,34 @@ const Design = () => {
   const data = useStaticQuery(query)
   return (
     <Layout>
-      <SEO title="Web Designing" />
-      <BackgroundSection
-        img={data.file.childImageSharp.fluid}
-        styleClass="background-image"
-      >
-        <div className="background-overlay">
-          <div className="background-content">
-            <p className="design-intro">
-              We create designs of websites that are displayed on the internet.
-              Bringing out the appearance, layout and the content.
-            </p>
-          </div>
-        </div>
-      </BackgroundSection>
-      <div className="design-points">
+      <SEO
+        title="Web Designing"
+        description="Web design is what creates the overall look and feel when you’re using a website. It’s the process of planning and building the elements of your website, from structure and layout to images, colors, fonts and graphics. Your number one web designer in Uganda."
+        keywords={[
+          "web designer",
+          "website",
+          "web developer",
+          "uganda",
+          "affordable website",
+        ]}
+      />
+      <div className="option web-design">
+        <h3>Web designing</h3>
+        <Img fluid={data.file.childImageSharp.fluid}></Img>
+        <p>
+          Web design is what creates the overall look and feel when you’re using
+          a website. It’s the process of planning and building the elements of
+          your website, from structure and layout to images, colors, fonts and
+          graphics.
+        </p>
+        <p>
+          Web design has numerous components that work together to create the
+          finished experience of a website, including graphic design, user
+          experience design, interface design, search engine optimization (SEO)
+          and content creation. These elements determine how a website looks,
+          feels and works on various devices.
+        </p>
+
         <p>We create websites that are</p>
         <ul>
           <li>
@@ -45,7 +58,9 @@ const Design = () => {
           <li>Refactoring and redesigning your already existing website</li>
           <li>Speed loads making it convenient to the visitors</li>
         </ul>
-        <Link to="/packages">get started</Link>
+        <Link to="/packages" className="get-started">
+          get started
+        </Link>
       </div>
     </Layout>
   )

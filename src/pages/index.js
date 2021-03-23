@@ -1,41 +1,18 @@
-import React, { useEffect } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import BackgroundSection from "../components/BackgroundImage"
+import React from "react"
+import { Link } from "gatsby"
+import MainSlider from "../components/sliders/mainSlider"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Services from "../components/services"
 import Info from "../components/info"
 import Why from "../components/why"
 
-const query = graphql`
-  {
-    file(relativePath: { eq: "intro.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2400) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`
-
 const IndexPage = () => {
-  const data = useStaticQuery(query)
-  useEffect(() => {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/"
-          })
-        }
-      })
-    }
-  })
   return (
     <Layout>
       <SEO
         title="Home"
-        description="Your best choice for modern Websites and web apps in Uganda"
+        description="Your best choice for modern Websites and web apps in Uganda. Using modern dependable blazing technologies in the web field like HTML5, CSS3, JavaScript, React, Gatsby, WordPress, Shopify, Netlify, Firebase, Contentful and others, we provide value driven web solutions. A website improves your credibility, ensured market expansion, convenience, offers a growth opportunity. We build web apps and websites for online stores, NGOs, personnal brands, restaurants, hotels, real estate, schools and all kinds of businesses and organizations"
         keywords={[
           "best web designer in Uganda",
           "cheap web designer",
@@ -50,29 +27,11 @@ const IndexPage = () => {
           "freelancer web designer",
         ]}
       />
-      <BackgroundSection
-        img={data.file.childImageSharp.fluid}
-        styleClass="background-image"
-      >
-        <div className="background-overlay">
-          <div className="background-content">
-            <p className="intro">
-              Today, we live in a digital world and information changes and
-              moves so fast. Digital presence is overtaking the traditional one
-              as more and more people use the internet. Keeping your brand,
-              business and organization off the web puts you in an unfavorable
-              position concerning your works. We provide you with an affordable
-              cost effective professional quality website that maximizes your
-              potential.
-            </p>
-            <Link to="/packages" className="packages-link">
-              Get started
-            </Link>
-          </div>
-        </div>
-      </BackgroundSection>
-      <Info info="Using modern dependable blazing technologies in the web field like HTML5, CSS3, JavaScript E8+, React, Gatsby, WordPress, AWS, Shopify, Netlify, Firebase, Contentful and others, we provide value driven web solutions to our customers. A website improves your credibility, ensured market expansion, convenience, offers a growth opportunity. We build web apps and websites for online stores, NGOs, personnal brands, restaurants, hotels, real estate, schools and all kinds of businesses and organizations." />
+      <MainSlider />
+
+      <Info info="Using modern dependable blazing technologies in the web field like HTML5, CSS3, JavaScript, React, Gatsby, WordPress, Shopify, Netlify, Firebase, Contentful and others, we provide value driven web solutions. A website improves your credibility, ensured market expansion, convenience, offers a growth opportunity. We build web apps and websites for online stores, NGOs, personnal brands, restaurants, hotels, real estate, schools and all kinds of businesses and organizations." />
       <Why />
+      <Services />
     </Layout>
   )
 }

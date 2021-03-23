@@ -10,99 +10,100 @@ body {
 /* navbar */
 nav {
   margin-bottom: 0;
+  background-color: #fff;
 }
 
 .head {
   display: flex;
-  justify-content: space-between;
-  background-color: whitesmoke;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head a {
+  display: inline-flex;
 }
 
 .head a img {
   width: 16rem;
-  display: block;
 }
 
 .head button {
-  margin-right: 0.8rem;
-  background: rgb(76, 169, 223);
-  border: 1px solid #fff;
+  color: rgb(114, 201, 230);
   outline: none;
-  display: block;
-  margin-top: 1.8rem;
+  display: inline-flex;
   height: 2.5rem;
-}
-/* navlinks */
-.links {
-  background-color: rgb(76, 169, 223);
-  margin-top: 0;
-  margin-bottom: 0;
-  position: relative;
-  left: -500px;
-  display: none;
-  transition: all 0.2s ease-in;
+  background: transparent;
+  border: none;
+  flex-direction: column;
+  text-transform: uppercase;
+  line-height: 1.5rem;
 }
 
-.show-links {
-  left: 0;
-  display: block;
+/* navlinks */
+.links-model {
+  min-height: 15px;
+  background-color: #333;
+  transition: all 0.2s ease-in;
+  display: flex;
+}
+
+.hide-model {
+  min-height: -100vh;
+  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .links li {
   list-style-type: none;
-  padding: 0.5rem;
+  padding: 0.6rem;
   color: rgb(250, 233, 156);
-  margin-bottom: 0;
 }
 
-.services-btn {
-  background: transparent;
-  color: inherit;
-  border: none;
-  outline: none;
-  font-size: 1.25rem;
-}
-
-.hide-services {
-  display: none;
-}
-
-.show-services {
-  display: block;
+.links {
+  display: flex;
+  padding: 0.4rem;
 }
 
 .links li a {
   color: rgb(250, 233, 156);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
-.background-image {
-  min-height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.get-started {
+  text-transform: capitalize;
+  background: red;
+  color: #fff !important;
+  border-radius: 1rem;
+  padding: 0.4rem;
 }
 
-.background-overlay {
-  background: rgba(32, 32, 31, 0.45);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overlay {
+  background-color: rgba(59, 47, 47, 0.65);
+  min-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .background-content {
-  width: 100%;
-  color: rgb(223, 233, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.9rem;
 }
 
-.intro {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  margin: 0 1rem 1rem 2rem;
+.background-image {
+  min-height: 40vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .packages-link {
@@ -123,6 +124,11 @@ nav {
 }
 
 /* why */
+
+.background-overlay {
+  background: rgb(65, 63, 63, 0.6);
+}
+
 .why-title {
   color: rgb(224, 97, 97);
   font-size: 1.3rem;
@@ -131,8 +137,45 @@ nav {
 }
 
 .reasons li {
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 1rem;
+}
+
+/* services */
+.services h2 {
+  text-transform: capitalize;
+  color: teal;
+}
+
+.services {
+  margin: 0.6rem;
+  line-height: 1.5rem;
+}
+
+.service h3 {
+  text-transform: capitalize;
+}
+
+.option {
+  margin: auto 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.option h3 {
+  color: rgb(17, 173, 166);
+  text-transform: capitalize;
+}
+
+.option a {
+  margin-bottom: 0.7rem;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.option a:hover {
+  background-color: blue;
+  padding: 0.5rem;
 }
 
 /* design */
@@ -160,41 +203,6 @@ nav {
   font-size: 1.25rem;
 }
 
-/* seo page */
-.seo-intro {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  padding: 0.8rem;
-  margin-bottom: 0;
-}
-
-.about-seo {
-  display: flex;
-  flex-direction: column;
-  color: rgb(41, 38, 38);
-  background-color: lightskyblue;
-  padding: 0.6rem;
-  font-size: 1.1rem;
-  line-height: 2rem;
-}
-
-/* domain page */
-.domain {
-  min-height: 50vh;
-  background-color: rgb(255, 249, 241);
-  display: flex;
-  flex-direction: column;
-  font-size: 1.1rem;
-  padding: 0.7rem;
-  line-height: 2.2rem;
-}
-
-.domain h4 {
-  color: rgb(92, 172, 204);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
 .contact-us-link {
   background-color: green;
   color: white;
@@ -205,15 +213,6 @@ nav {
   margin: 0 0 0.6rem 0.7rem;
 }
 
-/* mantainance page */
-.mantainance-intro {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding: 0.8rem;
-  padding-bottom: 0;
-  color: rgb(255, 255, 167);
-}
-
 .contact-link {
   background-color: red;
   color: white;
@@ -222,25 +221,6 @@ nav {
   padding: 0.3rem;
   margin-left: 0.7rem;
   text-decoration: none;
-}
-
-/* freelancing */
-.freelance-intro {
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 0.7rem;
-  line-height: 2.1rem;
-}
-
-/* services */
-.services {
-  min-height: 60vh;
-}
-
-.services h5 {
-  margin-left: 0.6rem;
-  font-size: 1.4rem;
-  border-bottom: rgb(245, 106, 56) solid 2px;
 }
 
 .back-home {
@@ -369,13 +349,30 @@ footer {
   margin: 0;
 }
 
-.page-links a {
-  display: block;
-  color: rgb(222, 231, 170);
-  text-decoration: underline;
-  font-size: 1.1rem;
+.footer-services {
+  margin-bottom: 2rem;
+}
+
+.footer-services a {
+  color: white;
+  text-decoration: none;
   padding: 0.3rem;
-  font-weight: 800;
+  display: block;
+  text-transform: capitalize;
+}
+
+.footer-services h3 {
+  color: yellow;
+  margin-bottom: 0;
+}
+
+.page-links a {
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
 }
 
 .social-links {
@@ -408,22 +405,15 @@ footer {
 
 /* media query */
 @media screen and (min-width: 820px) {
-  .head button {
-    display: none;
-  }
-
-  nav {
+  .links-model {
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: whitesmoke;
+    transition: all 0.5s ease-in-out;
   }
 
-  .links {
-    position: relative;
-    left: 0;
-    display: block;
-    transition: all 0.2s ease-in;
+  .hide-model {
+    min-height: -100vh;
+    display: none;
   }
 
   .links {
@@ -440,26 +430,27 @@ footer {
     font-size: 1.7rem;
   }
 
-  .services-btn {
-    color: rgb(143, 118, 6);
-    font-size: 1.7rem;
-    font-family: cursive;
-  }
-
-  .services-links li {
-    display: inline-block;
-  }
-
   /* homepage */
-  .intro {
-    font-size: 2.4rem;
-    line-height: 3.6rem;
+  .background-content {
+    padding-top: 4.3rem;
+    font-size: 3.3rem;
+    color: white;
+    line-height: 3.7rem;
+  }
+
+  .background-image {
+    min-height: 65vh;
   }
 
   .info {
     padding: 2rem 3.2rem;
-    font-size: 2rem;
-    line-height: 3.3rem;
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+  }
+
+  .background-overlay {
+    width: 100%;
+    height: 100%;
   }
 
   .why-title {
@@ -473,13 +464,28 @@ footer {
   }
 
   /* services */
-  .services h5 {
-    font-size: 1.9rem;
+  .services h2 {
+    font-size: 2rem;
   }
 
-  .links-services a {
-    font-size: 1.7rem;
-    padding: 1.4rem;
+  .services {
+    margin: 0.8rem;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+  }
+
+  .service h3 {
+    font-size: 1.8rem;
+  }
+
+  .option {
+    margin: auto 1.3rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .option h3 {
+    font-size: 2rem;
   }
 
   /* portfolio */
@@ -487,65 +493,6 @@ footer {
     font-size: 3rem;
     padding: 0.9rem;
     min-height: 50vh;
-  }
-
-  /* design */
-
-  .design-intro {
-    font-size: 3.2rem;
-    padding: 1rem;
-    line-height: 3.8rem;
-  }
-
-  .design-points {
-    padding: 0.8rem 1rem;
-    font-size: 1.9rem;
-    line-height: 3rem;
-  }
-
-  .design-points a {
-    padding: 0.3rem;
-    font-size: 1.25rem;
-  }
-
-  /* domain page */
-  .domain {
-    font-size: 1.7rem;
-    padding: 1rem;
-    line-height: 2.8rem;
-  }
-
-  .domain h4 {
-    font-size: 1.9rem;
-  }
-
-  /* mantainance page */
-  .mantainance-intro {
-    font-size: 2rem;
-    line-height: 3.3rem;
-    padding: 1.8rem;
-  }
-
-  /* seo page */
-  .seo-intro {
-    font-size: 2.3rem;
-    line-height: 3.7rem;
-    padding: 1.8rem;
-  }
-
-  .about-seo {
-    padding: 0.9rem;
-    font-size: 1.9rem;
-    line-height: 3rem;
-  }
-
-  /* freelancing */
-
-  .freelance-intro {
-    text-align: center;
-    font-size: 3.5rem;
-    padding: 1.4rem;
-    line-height: 3.7rem;
   }
 
   /* packages */
@@ -604,6 +551,23 @@ footer {
   /* footer */
   footer {
     min-height: 35vh;
+  }
+
+  .footer-services {
+    margin-bottom: 2rem;
+  }
+
+  .footer-services a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem;
+    display: block;
+    text-transform: capitalize;
+  }
+
+  .footer-services h3 {
+    color: yellow;
+    margin-bottom: 0;
   }
 
   .page-links a {

@@ -28,19 +28,18 @@ function SEO({ description, title, keywords }) {
   const defaultTitle = site.siteMetadata?.title
 
   return (
-    <Helmet htmlAttributes={{lang:"en"}} title={title}>
-      <meta name="description" content={description}/>
-      <meta name="keywords" content={keywords}/>
+    <Helmet htmlAttributes={{ lang: "en" }} title={title}>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
     </Helmet>
   )
 }
 
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
+// SEO.propTypes = {
+//   description: PropTypes.string,
+//   lang: PropTypes.string,
+//   meta: PropTypes.arrayOf(PropTypes.object),
+//   title: PropTypes.string.isRequired,
+// }
 
 export default SEO
