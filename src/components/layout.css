@@ -25,7 +25,7 @@ nav {
 }
 
 .head a img {
-  width: 16rem;
+  width: 13rem;
 }
 
 .head button {
@@ -178,31 +178,6 @@ nav {
   padding: 0.5rem;
 }
 
-/* design */
-
-.design-intro {
-  font-size: 2rem;
-  padding: 0.8rem;
-  line-height: 2.7rem;
-}
-
-.design-points {
-  background: rgb(130, 229, 229);
-  padding: 0.4rem 0.7rem;
-  font-size: 1.1rem;
-  color: brown;
-  line-height: 1.9rem;
-}
-
-.design-points a {
-  background: brown;
-  color: white;
-  text-transform: capitalize;
-  text-decoration: none;
-  padding: 0.3rem;
-  font-size: 1.25rem;
-}
-
 .contact-us-link {
   background-color: green;
   color: white;
@@ -300,10 +275,19 @@ nav {
 }
 
 /* contact form */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 form {
   min-height: 50vh;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 form button {
@@ -315,29 +299,13 @@ form button {
   font-size: 1.1rem;
 }
 
-.field {
-  margin: 0.9rem;
-  padding: 0.8rem;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-}
-
-.field input {
-  background-color: rgb(219, 250, 247);
-  color: rgb(51, 40, 40);
-  padding: 0.4rem;
-  font-size: 1.1rem;
-}
-
-.field label {
-  font-size: 1.3rem;
-  color: rgb(177, 2, 2);
-}
-
-.field select {
-  background-color: rgb(219, 250, 247);
-  font-size: 1.2rem;
+form input,
+textarea {
+  background: skyblue;
+  margin-bottom: 1.3rem;
+  border: none;
+  padding: 0.7rem;
+  color: black;
 }
 
 /* footer */
@@ -405,6 +373,10 @@ footer {
 
 /* media query */
 @media screen and (min-width: 820px) {
+  .head a img {
+    width: 18rem;
+  }
+
   .links-model {
     justify-content: center;
     display: flex;

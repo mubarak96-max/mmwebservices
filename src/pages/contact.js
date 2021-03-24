@@ -8,42 +8,25 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact Us" />
       <div className="form-section">
-        <form action="https://formspree.io/f/xqkgverl" method="POST">
-          <div className="field">
-            <label htmlFor="names">Names: </label>
-            <input type="text" required name="names" />
-          </div>
-          <div className="field">
-            <label htmlFor="email">E-mail: </label>
-            <input type="text" name="email" />
-          </div>
-          <div className="field">
-            <label htmlFor="phone-number">Phone Number: </label>
-            <input type="text" required name="phone-number" />
-          </div>
-          <div className="field">
-            <label htmlFor="web design">Service</label>
-            <select name="service">
-              <option value="web designing">Web Designing</option>
-              <option value="domain registration">Domain Registration</option>
-
-              <option value="web mantainance">Web Mantainance</option>
-              <option value="seo">SEO</option>
-              <option value="freelancing">Freelancing</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div className="field">
-            <textarea name="message" cols="30" rows="5">
-              How can we help you
-            </textarea>
-          </div>
+        <form action="https://formspree.io/f/xpzkalwp" method="POST">
+          <input type="text" required name="names" placeholder="Names" />
+          <input type="text" name="email" placeholder="E-Mail" />
+          <input
+            type="text"
+            required
+            name="phone-number"
+            placeholder="Phone Number"
+          />
+          <input type="text" name="address" placeholder="Address" />
+          <textarea name="message" cols="30" rows="5">
+            How can we help you
+          </textarea>
           <button type="submit">Send</button>
         </form>
-        <Link to="/" className="back-home">
-          Back Home
-        </Link>
       </div>
+      <Link to="/" className="back-home">
+        Back Home
+      </Link>
     </Layout>
   )
 }
