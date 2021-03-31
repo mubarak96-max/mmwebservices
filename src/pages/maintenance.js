@@ -26,7 +26,7 @@ const Mantainance = () => {
         keywords={["website maintenance", "maintenance", "uganda"]}
       />
       <div className="option maintenance">
-        <h3>web maintanance</h3>
+        <h3>web maintenance</h3>
         <Img fluid={data.file.childImageSharp.fluid}></Img>
         <p>
           Your website is the foundation of your business’s online presence.

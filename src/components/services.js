@@ -25,7 +25,7 @@ const services = () => {
           <Link to="/domain">See more</Link>
         </article>
         <article className="service">
-          <h3>web mantainance</h3>
+          <h3>web maintenance</h3>
           <p>
             Checking your website regularly for issues, mistakes and keeping it
             updated and relevant on a consistent basis so as to keep the website
@@ -34,7 +34,7 @@ const services = () => {
             retains customers. Regular monitoring of your website is a must for
             keeping your business running smoothly
           </p>
-          <Link to="/mantainance">See more</Link>
+          <Link to="/maintenance">See more</Link>
         </article>
         <article className="service">
           <h3>Freelancing</h3>

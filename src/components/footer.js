@@ -24,13 +24,13 @@ const Footer = () => {
         <Link to="/domain">domain registration</Link>
         <Link to="/seoPage">SEO</Link>
         <Link to="/ecommerce">E-Commerce</Link>
-        <Link to="/maintanance">web mantainance</Link>
+        <Link to="/maintenance">web maintenance</Link>
         <Link to="/freelancing">freelancing</Link>
       </div>
       <div className="page-links">
         <Link to="/packages">Get Started</Link>
         <Link to="/portfolio">Portfolio</Link>
-        {/* <Link to="/blog">Blog</Link> */}
+        <Link to="/blog">Blog</Link>
         <Link to="/contact">Get in touch</Link>
       </div>
 

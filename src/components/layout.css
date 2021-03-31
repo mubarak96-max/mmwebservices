@@ -25,7 +25,7 @@ nav {
 }
 
 .head a img {
-  width: 13rem;
+  width: 12rem;
 }
 
 .head button {
@@ -195,7 +195,9 @@ nav {
   font-size: 1.3rem;
   padding: 0.3rem;
   margin-left: 0.7rem;
+  margin-top: 0.3rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 .back-home {
@@ -241,6 +243,12 @@ nav {
   font-size: 1.25rem;
 }
 
+.price {
+  color: rgb(255, 94, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* portfolio */
 .unavailable {
   text-align: center;
@@ -250,28 +258,38 @@ nav {
 }
 
 /* blog */
-.blog {
-  margin-top: 2.6rem;
+.blog-links {
+  margin: 2.5rem 0 0 0.9rem;
 }
 
-.blog img {
-  width: 100%;
+.blog-links a {
+  color: #333;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.blog p {
+.blog-image a img {
+  width: 15rem;
+}
+
+.blog-post {
+  margin: auto 1rem;
+  line-height: 1.5rem;
+}
+
+.blog-post img {
+  width: 75%;
+}
+
+.blog-post h2 {
   font-size: 1.2rem;
-  padding: 0.6rem;
-  line-height: 2.2rem;
-  color: rgb(15, 83, 83);
 }
 
-.blog button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  font-size: inherit;
-  text-decoration: solid;
-  color: blue;
+.blog-post h1 {
+  color: coral;
+  font-size: 1.8rem;
 }
 
 /* contact form */
@@ -486,6 +504,36 @@ footer {
   .packages li {
     padding: 0.9rem;
     font-size: 1.8rem;
+  }
+
+  /* blog */
+  .blog-links {
+    margin: 2.8rem 0 0 1.2rem;
+  }
+
+  .blog-links a {
+    font-size: 1.9rem;
+  }
+
+  .blog-image a img {
+    width: 20rem;
+  }
+
+  .blog-post {
+    margin: auto 1.3rem;
+    line-height: 2.4rem;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-post h1 {
+    font-size: 1.9rem;
+  }
+
+  .blog-post p {
+    font-size: 1.4rem;
   }
 
   /* contact form */

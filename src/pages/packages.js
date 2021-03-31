@@ -21,23 +21,26 @@ const Packages = () => {
             <li>Custom domain Name</li>
             <li>Logo Design</li>
             <li>Hosting up to one year</li>
+            <li>Static pages</li>
             <li>Social Media links</li>
-            <li>Upto 8 pages</li>
+            <li>Upto 5 pages</li>
             <li>One month support</li>
           </ul>
+          <span className="price">UgShs 300,000</span>
         </div>
         <div className="standard">
           <h4>Standard plan</h4>
           <ul>
             <li>All in Basic</li>
-
             <li>Content Management System</li>
             <li>3 months web support</li>
             <li>Chatbot</li>
-            <li>Upto 15 pages</li>
+            <li>Upto 10 pages</li>
+            <li>Dynamic pages</li>
             <li>Digital marketing solutions</li>
             <li>Feedback collection form</li>
           </ul>
+          <span className="price">UgShs 700,000</span>
         </div>
         <div className="premium">
           <h4>Premium Plan</h4>
@@ -49,8 +52,9 @@ const Packages = () => {
             <li>Offline loading</li>
             <li>6 months web support</li>
             <li>Online Payment system</li>
-            <li>Push Messages</li>
+            <li>Push Notifications</li>
           </ul>
+          <span className="price">UgShs 1.5 millions</span>
         </div>
         <Link to="/contact" className="contact-link">
           Contact us
