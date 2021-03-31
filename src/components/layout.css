@@ -56,19 +56,19 @@ nav {
 
 .links li {
   list-style-type: none;
-  padding: 0.6rem;
+  padding: 0.4rem;
   color: rgb(250, 233, 156);
 }
 
 .links {
   display: flex;
-  padding: 0.4rem;
+  padding: 0.3rem;
 }
 
 .links li a {
   color: rgb(250, 233, 156);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .get-started {
@@ -76,7 +76,7 @@ nav {
   background: red;
   color: #fff !important;
   border-radius: 1rem;
-  padding: 0.4rem;
+  padding: 0.3rem;
 }
 
 .overlay {
@@ -289,7 +289,7 @@ nav {
 
 .blog-post h1 {
   color: coral;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* contact form */
