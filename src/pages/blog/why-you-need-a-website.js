@@ -10,6 +10,16 @@ const Blog1 = () => {
         title="The Need for a Website in Uganda"
         description="Why you need a website for your business/brand/organization in Uganda"
         keywords={["why you need a website in Uganda"]}
+        ogTitle="The Need for a Website in Uganda"
+        ogDesc="why you need a website in Uganda"
+        ogImg="/blog1-2.jpg"
+        ogSite="mmwebservices.xyz"
+        ogLocation="Kampala, Uganda"
+        ogContent="article"
+        twitterTitle="The Need for a Website in Uganda"
+        twitterDesc="Why you need a website for your business/brand/organization in Uganda"
+        twitterImg="/blog1-2.jpg"
+        twitterName="@mmwebservices"
       />
       <article className="blog-post">
         <h1>Why you need a website in Uganda</h1>

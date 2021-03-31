@@ -45,7 +45,9 @@ const Design = () => {
           finished experience of a website, including graphic design, user
           experience design, interface design, search engine optimization (SEO)
           and content creation. These elements determine how a website looks,
-          feels and works on various devices.
+          feels and works on various devices. We build your website in a
+          timeframe between two days and two weeks depending on it's complexity
+          and at the lowest cost possible.
         </p>
 
         <p>We create websites that are</p>

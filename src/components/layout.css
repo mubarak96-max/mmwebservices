@@ -97,7 +97,7 @@ nav {
 }
 
 .background-image {
-  min-height: 40vh;
+  min-height: 46vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,13 +258,17 @@ nav {
 }
 
 /* blog */
+.blog-link {
+  margin-top: 2rem;
+}
+
 .blog-links {
-  margin: 2.5rem 0 0 0.9rem;
+  margin: 2.5rem 0 1rem 1rem;
 }
 
 .blog-links a {
   color: #333;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
   font-weight: 700;
   text-decoration: none;
@@ -284,12 +288,17 @@ nav {
 }
 
 .blog-post h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .blog-post h1 {
   color: coral;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.blog-post ul li {
+  padding: 0.3rem;
 }
 
 /* contact form */
@@ -533,6 +542,11 @@ footer {
   }
 
   .blog-post p {
+    font-size: 1.4rem;
+  }
+
+  .blog-post ul li {
+    padding: 0.4rem;
     font-size: 1.4rem;
   }
 
